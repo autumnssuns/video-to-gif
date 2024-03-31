@@ -19,3 +19,8 @@ jobs:
     - name: build with pyinstaller
       run: |
         pyinstaller src/video-to-gif.py --onedir --console --noconfirm
+    - name: Upload artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: dist
+        path: dist/
