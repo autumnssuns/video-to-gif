@@ -1,3 +1,5 @@
 # Git ignore python
 
 venv/
+build/
+dist/
